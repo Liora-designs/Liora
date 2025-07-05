@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Poppins:wght@600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background: linear-gradient(135deg, #f4f6fb 0%, #e0e7ef 100%);
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* Subtle SVG dot pattern overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="%23cbd5e1" fill-opacity="0.13"/><circle cx="22" cy="22" r="2" fill="%23cbd5e1" fill-opacity="0.13"/></svg>');
+  opacity: 0.7;
+  background-repeat: repeat;
+  background-size: 40px 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Montserrat', 'Inter', system-ui, sans-serif;
+}
+
+body {
+  animation: fadeIn 0.7s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+* {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.section-divider {
+  width: 100vw;
+  height: 60px;
+  margin: 0;
+  display: block;
+  background: none;
+  border: none;
+  pointer-events: none;
+}
+
+/* Parallax blob utility (to be used in React) */
+.parallax-blob {
+  will-change: transform;
+  transition: transform 0.2s cubic-bezier(0.4,0,0.2,1);
+} 
