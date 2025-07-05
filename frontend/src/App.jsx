@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
@@ -29,6 +29,21 @@ function Home() {
   );
 }
 
+// GitHub Pages routing fix
+function GitHubPagesRedirect() {
+  const location = useLocation();
+  
+  useEffect(() => {
+    // Check if we're on GitHub Pages and need to redirect
+    if (location.search.includes('?/')) {
+      const path = location.search.replace('?/', '').replace(/~and~/g, '&');
+      window.history.replaceState(null, '', path);
+    }
+  }, [location]);
+
+  return null;
+}
+
 export default function App() {
   // Parallax effect for blobs
   useEffect(() => {
@@ -46,6 +61,7 @@ export default function App() {
 
   return (
     <Router>
+      <GitHubPagesRedirect />
       <WhatsAppButton />
       <NavBar />
       <Routes>
