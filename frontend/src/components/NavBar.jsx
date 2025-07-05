@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ConsultationFormSection from './ConsultationFormSection';
-import logo from '/lio.png';
 
 const NavBar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -12,7 +11,7 @@ const NavBar = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center gap-2 text-2xl font-bold text-black-700">
           <img
-            src={logo}
+            src="/lio.png"
             alt="LIORA Logo"
             className="h-16 scale-125 origin-left object-contain"
           />
