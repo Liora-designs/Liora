@@ -1,4 +1,4 @@
-export default function SectionDivider({ flip = false, color = '#A9A9A9' }) {
+export default function SectionDivider({ flip = false, color = '#e0e7ef' }) {
   return (
     <svg
       className={`section-divider ${flip ? 'rotate-180' : ''}`}
