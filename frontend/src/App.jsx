@@ -29,8 +29,6 @@ function Home() {
   );
 }
 
-
-
 export default function App() {
   // Parallax effect for blobs
   useEffect(() => {
