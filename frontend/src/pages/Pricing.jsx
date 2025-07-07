@@ -10,7 +10,7 @@ const plans = [
       'Responsive Design',
       'Basic HTML/CSS/Wordpress',
       '1 Month free services',
-      'No API integration'
+      
     ],
     highlight: false,
   },
@@ -58,7 +58,6 @@ export default function Pricing() {
             <ul className="mb-8 space-y-2 text-lg text-gray-700 text-left w-full max-w-xs mx-auto list-disc pl-6">
               {plan.features.map(f => <li key={f}>{f}</li>)}
             </ul>
-            <Link to="/about-us" className="mt-auto bg-gradient-to-r from-accent to-purple text-white px-8 py-3 rounded-xl font-semibold shadow hover:from-accent-dark hover:to-purple-dark transition-all inline-block text-center">Choose {plan.name}</Link>
           </div>
         ))}
       </div>
