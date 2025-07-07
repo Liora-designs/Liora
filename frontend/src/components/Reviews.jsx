@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { FaUserGraduate, FaUniversity, FaPassport, FaRegFileAlt, FaMoneyCheckAlt, FaPlaneDeparture, FaHome, FaBriefcase } from 'react-icons/fa';
+import { FaUserGraduate, FaUniversity, FaPassport, FaRegFileAlt, FaMoneyCheckAlt, FaPlaneDeparture, FaHome, FaBriefcase, FaCartArrowDown, FaGlobe, FaLaptop, FaBatteryHalf, FaBatteryFull } from 'react-icons/fa';
 import SectionDivider from './SectionDivider';
 
 const features = [
   {
-    icon: <FaUserGraduate className="text-2xl text-primary group-hover:text-gold transition-all animate-bounceIcon" />,
+    icon: <FaCartArrowDown className="text-2xl text-primary group-hover:text-gold transition-all animate-bounceIcon" />,
     title: 'Responsive E-Commerce Platform',
   },
   {
-    icon: <FaUniversity className="text-2xl text-accent group-hover:text-gold transition-all animate-bounceIcon" />,
+    icon: <FaGlobe className="text-2xl text-accent group-hover:text-gold transition-all animate-bounceIcon" />,
     title: 'Custom Business Website',
   },
   {
-    icon: <FaPassport className="text-2xl text-gold group-hover:text-primary transition-all animate-bounceIcon" />,
+    icon: <FaLaptop className="text-2xl text-gold group-hover:text-primary transition-all animate-bounceIcon" />,
     title: 'SaaS Dashboard UI/UX',
   },
   {
@@ -24,7 +24,7 @@ const features = [
     title: 'API Integrations',
   },
   {
-    icon: <FaPlaneDeparture className="text-2xl text-gold-dark group-hover:text-primary transition-all animate-bounceIcon" />,
+    icon: <FaBatteryFull className="text-2xl text-gold-dark group-hover:text-primary transition-all animate-bounceIcon" />,
     title: 'Performance Optimization',
   },
 ];

@@ -1,4 +1,4 @@
-import { FaUserGraduate, FaUniversity, FaPassport, FaRegFileAlt, FaMoneyCheckAlt, FaPlaneDeparture, FaHome, FaBriefcase } from 'react-icons/fa';
+import { FaUserGraduate, FaUniversity, FaPassport, FaRegFileAlt, FaMoneyCheckAlt, FaPlaneDeparture, FaHome, FaBriefcase, FaDesktop, FaGlobe, FaNetworkWired, FaBars, FaBatteryHalf, FaBatteryFull, FaChargingStation } from 'react-icons/fa';
 
 const features = [
   {
@@ -7,7 +7,7 @@ const features = [
     title: 'Custom Web Applications',
   },
   {
-    icon: <FaHome className="text-3xl text-white" />,
+    icon: <FaGlobe className="text-3xl text-white" />,
     circleClass: "bg-purple",
     title: 'Business Websites',
   },
@@ -17,7 +17,7 @@ const features = [
     title: 'E-Commerce Solutions',
   },
   {
-    icon: <FaUserGraduate className="text-3xl text-white" />,
+    icon: <FaDesktop className="text-3xl text-white" />,
     circleClass: "bg-primary-light",
     title: 'UI/UX Design',
   },
@@ -27,7 +27,7 @@ const features = [
     title: 'API Integrations',
   },
   {
-    icon: <FaPlaneDeparture className="text-3xl text-white" />,
+    icon: <FaBatteryFull className="text-3xl text-white" />,
     circleClass: "bg-accent-light",
     title: 'Performance Optimization',
   },

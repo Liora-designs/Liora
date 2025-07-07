@@ -1,4 +1,4 @@
-import { FaMoneyCheckAlt, FaHome, FaBriefcase, FaRegFileAlt } from 'react-icons/fa';
+import { FaMoneyCheckAlt, FaHome, FaBriefcase, FaRegFileAlt, FaGlobe } from 'react-icons/fa';
 
 const services = [
   {
@@ -12,7 +12,7 @@ const services = [
     href: '/projects',
   },
   {
-    icon: <FaHome className="text-3xl text-white" />,
+    icon: <FaGlobe className="text-3xl text-white" />,
     circleClass: "bg-purple",
     title: 'Business Websites',
     features: [

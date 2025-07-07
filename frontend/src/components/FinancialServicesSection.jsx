@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaMoneyCheckAlt, FaHome, FaBriefcase } from 'react-icons/fa';
+import { FaMoneyCheckAlt, FaHome, FaBriefcase, FaGlobe, FaCartArrowDown } from 'react-icons/fa';
 import SectionDivider from './SectionDivider';
 
 const services = [
@@ -13,7 +13,7 @@ const services = [
     ],
   },
   {
-    icon: <FaHome className="text-2xl text-primary group-hover:text-gold transition-all animate-bounceIcon" />,
+    icon: <FaGlobe className="text-2xl text-primary group-hover:text-gold transition-all animate-bounceIcon" />,
     title: 'Business Websites',
     features: [
       'Responsive & SEO-friendly',
@@ -22,7 +22,7 @@ const services = [
     ],
   },
   {
-    icon: <FaBriefcase className="text-2xl text-accent-dark group-hover:text-gold transition-all animate-bounceIcon" />,
+    icon: <FaCartArrowDown className="text-2xl text-accent-dark group-hover:text-gold transition-all animate-bounceIcon" />,
     title: 'E-Commerce Solutions',
     features: [
       'Custom storefronts',
